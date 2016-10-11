@@ -1,0 +1,24 @@
+<nav class='nav-container'>
+  <div class="outer-title-container">
+    <h4>OTR</h4>
+    <div class="title-container"><a ui-sref='home'>{{ title }}</a></div>
+    <h4>CIN</h4>
+  </div>
+  <div class="header-link-container">
+    <div class="link-container" ui-sref='shop'>{{ shopLink }}</div>
+    <div class="link-container" ng-click='showBrands()'>BRANDS</div>
+    <div class="link-container" ng-click='showDepartments()'>DEPARTMENTS</div>
+    <div class="link-container" ui-sref='shop'>ARCHIVE</div>
+  </div>
+  <div class="brand-container" ng-show='brandDiv'>
+    <div class="brands" ng-click='showBrands()' ui-sref='shop' ng-repeat='brand in getBrands'>{{brand}}</div>
+  </div>
+  <div class='departments-container' ng-show='departmentsDiv'>
+    <div class="brands" ng-click='showDepartments()' ui-sref='shop' ng-repeat='department in departments'>{{department}}</div>
+  </div>
+  <div ui-sref='cart' class='cart-counter'>Cart ({{cartCount}})</div>
+  <div ui-sref='cart' class="cart-icon"></div>
+  <!-- <div class="clock"></div> -->
+
+  </div>
+</nav>

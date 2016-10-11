@@ -1,0 +1,28 @@
+.outer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.clothes-contaier {
+  display: grid;
+}
+.item-container {
+  width: 250px;
+  margin: 10px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+.item-image {
+  width: 100%;
+}
+.item-name {
+  font-weight: bold;
+  padding-bottom: 2vh;
+}
+.item-brand {
+font-size: 15px;
+padding-bottom: 2vh;
+}
+.item-price {
+font-size: 15px;
+}

@@ -1,0 +1,128 @@
+.cart-header {
+    font-family: "Lato", sans-serif;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.item-cart-container {
+    display: flex;
+    justify-content: space-around;
+    border: solid;
+    border-width: 1px;
+    margin: 20px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.cart-image-container {
+    width: 150px;
+}
+
+.cart-image {
+    width: 100%;
+    padding: 10px 10px;
+}
+
+.cart-item-name-container {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.cart-item-name {
+    font-size: 15px;
+}
+
+.cart-qty-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.cart-qty-title {}
+
+.item-qty {
+    border: solid 1px;
+    padding: 10px;
+}
+
+.item-total-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.item-total-title {}
+
+.item-total {}
+
+
+/*.remove-item-container {
+  position: relative;;
+}*/
+
+.remove-item {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+}
+
+.checkout-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-family: "Lato", sans-serif;
+}
+
+.notes-container {}
+
+.notes-title {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.notes-text {}
+
+.subtotal-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.buttons-container {}
+
+.check-out-button {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: black;
+    background: white;
+    border: solid 1px;
+    margin-top: 15px;
+    /*width: 150px;*/
+}
+
+.update-button {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: black;
+    background: white;
+    border: solid 1px;
+}
+
+.subtotal {
+  margin: 10px 0px;
+}

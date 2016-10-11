@@ -1,0 +1,27 @@
+<footer class='footer'>
+    <div>
+        <div ui-sref='returns' ng-repeat='link in footerInfoLinks' class="footer-info-links">{{ link }}</div>
+    </div>
+    <div class="footer-social-container">
+        <div class="footer-style">Subscribe!</div>
+        <div class="footer-style">Sign up to get the latest news....</div>
+        <div>
+            <input ng-model='emailAddress' class="footer-input" type="text" name="name" placeholder="Your Email">
+            <button ng-click='showEmailMsg(); fadeOutMessage()' class='footer-button' type="button" name="button">OK</button>
+        </div>
+    </div>
+    <div class='social-outer-container'>
+      <h1 class="follow">Follow us!</h1>
+      <div class="social-media-container">
+        <a href="https://twitter.com/?lang=en" target="_blank"><div class="twitter"></div></a>
+        <a href='https://www.facebook.com/' target='_blank'><div class="facebook"></div></a>
+        <a href='https://www.youtube.com/' target='_blank'><div class="youtube"></div></a>
+      </div>
+    </div>
+    <div ng-show='hiddenEmail' class="hidden-email-message">
+        <div  class="email-popup">THANKS FOR SUBSCRIBING!</div><br>
+        <div class="email-popup">Our latest deals will be sent to:</div><br>
+        <div class="email-popup">{{emailAddress}}</div>
+        <!-- <div class="close-email" ng-click='closeEmail()'>x</div> -->
+    </div>
+</footer>

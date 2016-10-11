@@ -1,0 +1,10 @@
+<section class="outer-container">
+  <div class='clothes-container' ng-repeat='item in clothes'>
+    <div ui-sref='details({id: item.id})' class='item-container'>
+      <img class='item-image' ng-src='{{item.image}}' alt="scarf" /><br>
+      <div class='item-name'>{{item.name}}</div>
+      <div class="item-brand">{{item.brand}}</div>
+      <div class="item-price">{{item.price | currency}}</div>
+    </div>
+  </div>
+</section>

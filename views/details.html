@@ -1,0 +1,54 @@
+<section class="outer-container">
+  <div class="present"></div>
+  <section class="details-left-container">
+    <div class="details-name">{{singleItem.name}}</div>
+    <div class="details-brand">{{singleItem.brand}}</div>
+    <div class="details-price">{{singleItem.price | currency}}</div>
+    <div class="details-qty-button">
+      <div>Quantity</div>
+      <select ng-model='dropDown' class="qty-menu" name="" >
+        <option value=""> --- Select --- </option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10(max)</option>
+      </select>
+      <button ng-click='hidePresent(); move(); showHiddenCartDiv(); addToCart(singleItem, dropDown)'class='add-to-cart-button' type="button" name="button">Add To Cart</button>
+    </div>
+
+    <div class="h6-container">
+      <li class='h6'>{{singleItem.size}}</li>
+      <li class='h6'>{{singleItem.edge}}</li>
+      <li class='h6'>{{singleItem.made}}</li>
+      <li class='h6'>{{singleItem.inspired}}</li>
+      <li class='h6'>{{singleItem.zipper}}</li>
+      <li class='h6'>{{singleItem.cuffs}}</li>
+      <li class='h6'>{{singleItem.natural}}</li>
+    </div>
+
+
+  </section>
+  <section class="details-right-container">
+    <img class='details-image' ng-src="{{singleItem.image}}" alt="" />
+  </section>
+</section>
+<div class="details-bottom-container">
+  <div ui-sref='shop' class="details-bottom-button">Back To New Arrivals</div>
+</div>
+
+<div class="hidden-div" ng-show='hiddenCartDiv'>
+  <h3>Added to cart!</h3>
+  <div class='hidden-image-container'>
+    <img class='hidden-cart-image' src="{{singleItem.image}}" alt="" />
+    <h4 class='hidden-name'>{{singleItem.name}}</h4>
+    <div class="hidden-name">{{singleItem.price | currency}}</div>
+  </div>
+  <div class="hidden-div-checkout" ui-sref='cart'>Go To Checkout</div>
+  <div class="hidden-div-close">x</div>
+</div>

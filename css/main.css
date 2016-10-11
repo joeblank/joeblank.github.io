@@ -1,0 +1,202 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+.nav-container {
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/*.clock {
+    background: url('http://www.clipartbest.com/cliparts/9Tp/RBE/9TpRBEqTE.png') no-repeat center;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    ;
+    top: 10px;
+    left: 10px;
+    background-size: contain;
+}*/
+
+/*@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}*/
+
+.cart-icon {
+    width: 35px;
+    height: 35px;
+    background: url('http://devstore42.cloudapp.net/images/cart_icon.png')center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.cart-counter {
+    position: absolute;
+    top: 30px;
+    right: 55px;
+}
+
+.outer-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.title-container {
+    font-size: 90px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.title-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-link-container {
+    display: flex;
+}
+
+.link-container {
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: white;
+    text-decoration: none;
+    margin: 5px 20px;
+}
+
+.link-container:hover {
+    transform: scale(1.2);
+}
+
+.link-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 300px;
+    margin-top: 30px;
+}
+
+.brands {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+}
+
+.departments-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+    margin-top: 30px;
+}
+
+.footer {
+    color: white;
+    background: black;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    margin-top: -3px;
+}
+
+.footer-info-links {
+    padding-bottom: 3px;
+}
+
+.footer-style {
+    padding-bottom: 10px;
+}
+
+.footer-input {
+    height: 25px;
+    padding-top: 0px
+}
+
+.footer-button {
+    border: solid 1px;
+    background: black;
+    color: white;
+    width: 80px;
+    height: 25px;
+}
+
+.footer-button:focus {
+    outline: none;
+}
+
+.hidden-email-message {
+    position: fixed;
+    bottom: 200px;
+    right: 0px;
+    border: solid 1px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background: black;
+}
+
+
+/*.close-email {
+  position: fixed;
+    color: white;
+    bottom: 285px;
+    right: 12px;
+}*/
+
+.email-popup {
+    font-size: 22px;
+}
+
+.social-outer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow {
+  margin-bottom: 10px;
+}
+
+.social-media-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter {
+    background: url('http://it.nmu.edu/sites/default/files/images/Twt.png') center no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}
+
+.facebook {
+    background: url('http://www.freeiconspng.com/uploads/social-facebook-button-blue-icon--social-bookmark-iconset--yootheme-6.png') center no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    margin: 0px 10px;
+}
+
+.youtube {
+    background: url('http://www.freeiconspng.com/uploads/youtube-icon-app-logo-png-9.png') center no-repeat;
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+}

@@ -1,0 +1,38 @@
+<section>
+  <h2 class="cart-header">Your Cart</h2>
+  <div ng-repeat='item in cartItems track by $index' class="">
+    <div class="item-cart-container">
+      <div class="cart-image-container">
+        <img ui-sref='shop' class="cart-image" ng-src="{{item.image}} center no-repeat" alt="" />
+      </div>
+      <div class="cart-item-name-container">
+        <div class="cart-item-name">{{item.name}}</div>
+      </div>
+      <div class="cart-qty-container">
+          <div class="cart-qty-title">Quantity</div>
+          <div class="item-qty">{{item.quantity}}</div>
+      </div>
+      <div class="item-total-container">
+        <div class="item-total-title">Total</div>
+        <div class="item-total">{{item.price * item.quantity | currency}}</div>
+      </div>
+        <div ng-click='removeFromCart(item.id)' class="remove-item">X</div>
+    </div>
+  </div>
+  <div class='checkout-container'>
+    <div class="notes-container">
+      <div class='notes-title'>Order Notes</div>
+      <textarea class='notes-text' name="name" rows="4" cols="80"></textarea>
+    </div>
+    <div class="subtotal-container">
+      <div class='subtotal'>Subtotal: {{getTotal | currency}}</div>
+      <!-- <div class='subtotal'>Tax: {{getTotal * .08 | currency}}</div>
+      <div class='subtotal'>Total: {{getTotal + (getTotal * .08) | currency}}</div> -->
+
+      <div class='buttons-container'>
+        <button class="update-button" type="button" name="button">UPDATE CART</button>
+        <button class='check-out-button' type="button" name="button">CHECK OUT</button>
+      </div>
+    </div>
+  </div>
+</section>

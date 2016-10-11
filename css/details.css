@@ -1,0 +1,182 @@
+.outer-container {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Lato', sans-serif;
+}
+
+.present {
+  background: url('http://www.freeiconspng.com/uploads/gift-box-icon-1.png') no-repeat center;
+  background-size: cover;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 0px;
+  right: 19px;
+  animation: dropin 3s;
+  display: none;
+}
+
+@keyframes dropin {
+  50% {
+    transform: scale(.9);
+    transform-origin: 0px 200px;
+  }
+
+  99% {
+    transform: scale(.9);
+    transform-origin: 0px 200px;
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+.details-left-container {
+    width: 35%;
+}
+
+.details-name {
+    font-size: 35px;
+    margin-top: 50px;
+    padding-bottom: 10px;
+}
+
+
+
+.details-brand {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.details-price {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.qty-menu {
+    padding-top: 10px;
+    margin-right: 5px;
+}
+
+.details-qty-button {
+    margin-top: 20px;
+}
+
+.add-to-cart-button {
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: black;
+    background: white;
+    border: solid 1px;
+}
+
+.add-to-cart-button:focus {
+    outline: none;
+}
+
+.h6-container {
+    margin-top: 20px;
+}
+
+.h6 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.details-right-container {
+    width: 35%;
+}
+
+.details-image {
+    margin-top: 50px;
+}
+
+/*@keyframes photo {
+
+  50% {
+    transform-origin: 512px -190px;
+    transform: scale(.02);
+  }
+  80% {
+    transform-origin: 512px -173px;
+    transform: scale(.02);
+  }
+  100% {
+    transform: scale(0px);
+  }
+
+}*/
+
+.details-bottom-container {
+    display: flex;
+    justify-content: center;
+}
+
+.details-bottom-button {
+    width: 180px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.hidden-div {
+    width: 350px;
+    position: fixed;
+    top: 170px;
+    right: 0px;
+    background: white;
+    border: solid 1px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #FF4136;
+  }
+  100% {
+    background-color: white;
+  }
+}
+
+.hidden-cart-image {
+    width: 50px;
+    height: 50px;
+}
+
+.hidden-image-container {
+  display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hidden-name {
+  font-size: 15px;
+    margin: 10px;
+}
+
+.hidden-div-checkout {
+    border: solid 1px;
+    padding: 3px;
+}
+
+.hidden-div-close {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+
+}
